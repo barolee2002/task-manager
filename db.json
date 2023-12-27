@@ -1,0 +1,8 @@
+{
+    "task": [
+      { "id": 1, "title": "" ,"category" : "", "status" : 1, "createAt" : "", "updateAt" : ""}
+    ],
+    "user": [
+      { "id": 1, "username": "username1", "password": "username1" , "avatarUrl" : ""}
+    ]
+  }
