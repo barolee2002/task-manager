@@ -1,0 +1,11 @@
+.signin-screen{
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    &-logo {
+        object-fit: cover;
+        height: 100%;
+        
+    }
+
+}
