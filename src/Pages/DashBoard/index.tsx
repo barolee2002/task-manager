@@ -163,8 +163,8 @@ export default function DashBoard() {
                                         <th>
                                             <Form.Check
                                                 type="checkbox"
-                                                defaultChecked ={task.status === 1 ? true : false}
-                                                // checked={task.status === 1 ? true : false}
+                                                // defaultChecked ={task.status === 1 ? true : false}
+                                                checked={task.status === 1 ? true : false}
                                                 
                                                 onClick={() => {
                                                     setActionRow(task.id);
