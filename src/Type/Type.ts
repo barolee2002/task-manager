@@ -12,14 +12,23 @@ export type user = {
     username: string;
     password : string;
 }
-export type task = {
+export type product = {
     id: number;
-    userId: string;
-    title: string;
-    category: string;
-    status: number;
-    createAt: string;
-    completeAt: string;
+    title: string,
+    description : string;
+    image : string;
+    category : string,
+    price : number,
+    rating : {
+        rate: number,
+        count : number
+    }
+}
+export type cart = {
+    id : number
+    product : product;
+    quantity : number;
+    createAt : string;
 }
 export type metadata = {
     totalPages : number;

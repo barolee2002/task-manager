@@ -8,6 +8,7 @@ import store from './redux/store';
 import reportWebVitals from "./reportWebVitals";
 
 import './index.scss';
+import '@csstools/normalize.css';
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );

@@ -1,0 +1,59 @@
+.pay-modal {
+
+    .product-item {
+        background-color: #fff;
+        margin-bottom: 12px;
+        padding: 8px 12px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-img {
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+        }
+        &-title {
+          margin: 0;
+          width: 20%;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          overflow-wrap: break-word;
+          text-overflow: ellipsis;
+          -webkit-line-clamp: 2;
+          height: 2.8rem;
+        }
+        &-price {
+          margin: 0;
+          font-weight: 500;
+        }
+        &-quantity {
+          display: flex;
+          font-size: 16px;
+          align-items: center;
+          gap: 0 12px;
+          .quantity {
+            cursor: auto;
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 5rem;
+            text-align: center;
+          }
+        }
+      }
+    .total {
+        display: flex;
+        gap : 0 28px;
+        justify-content: flex-end;
+        &-title {
+            font-weight: 500;
+            font-size: 24px;
+        }
+        &-value {
+            font-weight: 500;
+            font-size: 24px;
+        }
+    }
+}

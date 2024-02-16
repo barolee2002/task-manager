@@ -1244,10 +1244,10 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
-"@csstools/normalize.css@*":
-  version "12.0.0"
-  resolved "https://registry.npmjs.org/@csstools/normalize.css/-/normalize.css-12.0.0.tgz"
-  integrity sha512-M0qqxAcwCsIVfpFQSlGN5XjXWu8l5JDZN+fPt1LeW5SZexQTgnaEvgXAY+CeygRw0EeppWHi12JxESWiWrB0Sg==
+"@csstools/normalize.css@*", "@csstools/normalize.css@^12.1.1":
+  version "12.1.1"
+  resolved "https://registry.npmjs.org/@csstools/normalize.css/-/normalize.css-12.1.1.tgz"
+  integrity sha512-YAYeJ+Xqh7fUou1d1j9XHl44BmsuThiTr4iNrgCQ3J27IbhXsxXDGZ1cXv8Qvs99d4rBbLiSKy3+WZiet32PcQ==
 
 "@csstools/postcss-cascade-layers@^1.1.0":
   version "1.1.1"
@@ -2307,6 +2307,13 @@
   version "18.2.18"
   resolved "https://registry.npmjs.org/@types/react-dom/-/react-dom-18.2.18.tgz"
   integrity sha512-TJxDm6OfAX2KJWJdMEVTwWke5Sc/E/RlnPGvGfS0W7+6ocy2xhDVQVh/KvC2Uf7kACs+gDytdusDSdWfWkaNzw==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react-stars@^2.2.4":
+  version "2.2.4"
+  resolved "https://registry.npmjs.org/@types/react-stars/-/react-stars-2.2.4.tgz"
+  integrity sha512-7wZNmH28ZeDSkesOmpvenLOLJ3StRdHzAbbs+ZkLEOx75Qe8vUWl+qCGnJHdKr+HCF/BSZPvw7LF96Fl+fTUSw==
   dependencies:
     "@types/react" "*"
 
@@ -5718,10 +5725,10 @@ human-signals@^3.0.1:
   resolved "https://registry.npmjs.org/human-signals/-/human-signals-3.0.1.tgz"
   integrity sha512-rQLskxnM/5OCldHo+wNXbpVgDn5A17CUoKX+7Sokwaknlq7CdSnphy0W39GU8dw59XiCXmFXDg4fRuckQRKewQ==
 
-husky@^8.0.1:
-  version "8.0.1"
-  resolved "https://registry.npmjs.org/husky/-/husky-8.0.1.tgz"
-  integrity sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==
+husky@^7.0.4:
+  version "7.0.4"
+  resolved "https://registry.npmjs.org/husky/-/husky-7.0.4.tgz"
+  integrity sha512-vbaCKN2QLtP/vD4yvs6iz6hBEo6wkSzs8HpRah1Z6aGmF2KW5PdYuAd7uX5a+OyBZHBhd+TFLqgjUgytQr4RvQ==
 
 iconv-lite@^0.6.3:
   version "0.6.3"
@@ -8738,6 +8745,11 @@ react-scripts@5.0.1:
     workbox-webpack-plugin "^6.4.1"
   optionalDependencies:
     fsevents "^2.3.2"
+
+react-stars@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.npmjs.org/react-stars/-/react-stars-2.2.5.tgz"
+  integrity sha512-O//KS6Z9RZnUOU/r+3+wxCzNalVn/wEWIcbAQFRV3dw8WbV+ys/kgcpBPijqTiNpHGrcwZdtb/7wF/UVem20CQ==
 
 react-transition-group@^4.4.5:
   version "4.4.5"

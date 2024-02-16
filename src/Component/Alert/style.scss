@@ -1,0 +1,10 @@
+.noti{
+    position: absolute;
+    top: 50px;
+    z-index: 10000;
+    right: 100px;
+    margin-bottom: 0;
+    &>p{
+        margin: 0;
+    }
+}

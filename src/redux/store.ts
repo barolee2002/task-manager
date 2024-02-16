@@ -1,14 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
 
 import userReducer from "Pages/Account/accoutSlice";
-import taskReducer from "Pages/DashBoard/taskSlice";
+import cartReducer from "Pages/Cart/CartSlice";
 import authenReducer  from "Pages/SignIn/AuthenSlice";
 
 const store = configureStore({
     reducer: {
         authen: authenReducer,
-        task: taskReducer,
-        user : userReducer
+        user : userReducer,
+        cart :  cartReducer,
     },
 });
 
