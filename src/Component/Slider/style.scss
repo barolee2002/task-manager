@@ -1,0 +1,38 @@
+.slider {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 0 36px;
+  &-item {
+    background-color: #fff;
+    width: 20%;
+    border-radius: 6px;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    &-img {
+      width: 50px;
+      height: 50px;
+    }
+    &-title {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      overflow-wrap: break-word;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      height: 2.8rem;
+      width: 100%;
+      margin-top: 8px;
+      margin-bottom: 0;
+    }
+    &-price{
+        margin-bottom: 0;
+        font-weight: 500;
+    }
+    &-rate {
+        display: flex;
+        justify-content: center;
+    }
+  }
+}

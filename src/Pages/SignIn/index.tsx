@@ -4,7 +4,7 @@ import React from 'react';
 // eslint-disable-next-line import/order
 import { Button, Form } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router';
+import { useLocation, useNavigate } from 'react-router';
 
 import loginLogo from '../../assets/login-logo.svg';
 import { login } from './AuthenSlice';
@@ -13,10 +13,15 @@ import { setCookie } from 'utils/Cookie';
 
 import './style.scss';
 export default function SignIn() {
+    const nextPage = new URLSearchParams(useLocation().search).get('next');
+
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const [username, setUsername] = React.useState('');
     const [password, setPassword] = React.useState('');
+    console.log(nextPage);
+    
+    
     const handleLogin = async () => {
         try {
             const response = await axiosClient.post(`user/login`, {
@@ -26,7 +31,7 @@ export default function SignIn() {
             dispatch(login(response.data));
             updateAxiosAccessToken(response.data.token);
             setCookie('loginUser', JSON.stringify(response.data), 1);
-            navigate('/admin/dashboard');
+            nextPage!==null ? navigate(`${nextPage}`) : navigate(`/admin/home`);
         } catch (error) {
             console.error(error);
 

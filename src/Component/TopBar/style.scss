@@ -1,0 +1,37 @@
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top : 0;
+    right: 0;
+    left: 0;
+    background-color: #f65c0a;
+    padding: 8px 25px;
+    .logo-btn{
+        background-color: #f65c0a;
+        border: none;
+    }
+    .logo {
+        text-align: center;
+        color : #fff;
+        cursor: pointer;
+        user-select: none;
+    }
+    .user{
+        display: flex;
+        gap : 0 24px;
+        .dropdown{
+            &-toggle {
+                display: flex;
+                align-items: center;
+                gap: 0 12px;
+                .avatar {
+                    display: flex;
+                    gap : 0 12px;
+    
+                }
+            }
+        }
+    }
+}
